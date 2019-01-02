@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assasins Arms Shop</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,900" rel="stylesheet">
+    <link rel="shortcut icon" href="triangle.png">
+    <link href="style1.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css"/>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="main_section">
+
+        <div id="top_contact_links" class="main_section hide_mobile col-xs-12">
+            <div class="container">
+                <a href="tel:+48517987511" class="top_contact_link col-xs-12"><i class="fas fa-phone"></i>Tel: +48 517 987 511</a>
+                <a href="mailto:sklep@assassins-arms.com" class="top_contact_link col-xs-12"><i class="fas fa-envelope"></i>E-mail: sklep@assassins-arms.com</a>
+                <a href="https://www.facebook.com" class="top_contact_link col-xs-12"><i class="fab fa-facebook-f"></i>assasinarms</a>
+            </div>
+        </div>
+
+        <div id="basket_container" class="mobile_left container col-xs-10">
+            <div id="top_logo" class="col-md-3 col-xs-10">
+                <a href="#"><img src="assasinsarms.png" title="Assasins Arms Shop"></a>
+            </div>
+
+            <div id="top_search" class="col-lg-5 col-md-4 col-sm-5 col-xs-12 hide_mobile">
+                <form>
+                    <input class="search_input col-xs-10" type="text" placeholder="Wpisz czego szukasz..." name="search_input">
+                    <button class="button_search col-xs-2"><i class="fas fa-search"></i></button>
+                </form>
+            </div>
+
+            <div id="top_basket" class="col-lg-4 col-md-5 col-sm-4  col-xs-2">
+
+                <div id="top_language" class="col-md-3 col-xs-12 hide_mobile">
+                    <div class="form_select_language">  
+                        <div class="selected_language">
+                            <span class="menu_settings_language">pl</span>
+                            <img src="pl.png">
+                            <i class="fas fa-angle-down"></i>
+                        </div>
+                        <form class="select_language_popup">
+                            <ul>
+                                <li>
+                                    <div class="form-group">
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" checked="" name="lang" value="pol">
+                                                <img src="pl.png">
+                                                <span>pl</span>
+                                            </label>
+                                        </div>
+                                        <div class="radio">
+                                            <label>
+                                                <input type="radio" name="lang" value="eng">
+                                                <img src="eng.png">
+                                                <span>en</span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                </li>
+                                <button class="btn-language" type="submit">Zastosuj zmiany</button>
+                            </ul>
+                        </form>
+                    </div> 
+                </div>
+
+                <div id="top_link_your_account" class="col-lg-3 col-md-4 col-xs-12 hide_mobile">
+                    <a href="#">Twoje konto</a>
+                </div>
+
+                <a href="#" id="top_links_basket" class="col-lg-6 col-md-5">
+                    <div id="rank_counter" class="col-md-4">
+                        <img src="rank.png">
+                        <span id="basket_count">2</span>
+                    </div>
+                    <div id="links_basket" class="col-md-8 col-sm-12">
+                        <span class="link_basket col-md-12">Twój koszyk</span>
+                        <span class="link_basket col-md-12">3 454,00 zł</span>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <div id="top_menu" class="main_section hide_mobile col-xs-12">
+            <nav class="container">
+                <ul class="nav_level_1 col-md-12">
+                    <li class="nav_item_level_1 col-xs-12">
+                        <a href="#">Gotowe zestawy do gry</a>
+                        <ul class="nav_level_2">
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a class="col-xs-12" href="#">Markery</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Spodnie</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Odzież i akcesoria</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Markery</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Spodnie</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Odzież i akcesoria</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Wyposażenie pól</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Markery</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Spodnie</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Wyposażenie pól</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12 show_mobile">
+                                <a class="col-xs-12" href="#">Pokaż wszystkie >></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item_level_1 col-xs-12">
+                        <a href="#">Sprzęt</a>
+                        <ul class="nav_level_2">
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12"><a href="#">Markery</a></li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12"><a href="#">Wyposażenie pól</a></li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12 show_mobile">
+                                <a class="col-xs-12" href="#">Pokaż wszystkie >></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item_level_1 col-xs-12">
+                        <a href="#">Odzież</a>
+                        <ul class="nav_level_2">
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Odzież sportowa</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Czapki</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Odzież militarna</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Odzież paintballowa</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Buty</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Spodnie</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Bluzy</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Arafatki</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12 show_mobile">
+                                <a class="col-xs-12" href="#">Pokaż wszystkie >></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item_level_1 col-xs-12">
+                        <a href="#">Kulki</a>
+                        <ul class="nav_level_2">
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12">
+                                <a href="#">Zestawy</a>
+                                <ul class="nav_level_3">
+                                    <li class="nav_item_level_3"><a href="#">Zestawy 5000</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy 1000</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Zestawy 500</a></li>
+                                    <li class="nav_item_level_3"><a href="#">Pozostałe</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12"><a href="#">Pakiety próbne</a></li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12"><a href="#">Pozostałe</a></li>
+                            <li class="nav_item_level_2 col-md-3 col-sm-4 col-xs-12 show_mobile">
+                                <a class="col-xs-12" href="#">Pokaż wszystkie >></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav_item_level_1 col-xs-12"><a href="#">Wyprzedaże</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="top_path_links"  class="container">
+            <a href="#">Strona główna</a>
+            <span>>></span>
+            <a href="#">Sprzęt</a>
+            <span>>></span>
+            <a href="#">Marker Tippmann FT-50 lite</a>
+        </div>
+    </header>
+
+    <main class="main_section">
+        <div id="product_container" class="container">
+            <div class="col-md-7 col-sm-12 products_slick_foto">
+                <div class="slider_product col-md-2 col-xs-12">
+                    <div><div class="container_item_slider select_foto"><img src="gun_1_large.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large_1.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large_1.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large_1.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large_1.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large_1.png"></div></div>
+                    <div><div class="container_item_slider"><img src="gun_1_large.png"></div></div>
+                </div>
+                <div class="col-md-10 product_large_foto">
+                    <img src="gun_1_large.png">
+                </div>
+            </div>
+
+            <div class="col-md-5 col-sm-12 products_description">
+                <h1>Marker Tippmann FT- 50</br> lite 50 cal rental (black)</h1>
+
+                <div class="col-md-12">
+                    <span class="label_description label_inline">Producent: <a href="#" class="red_label">Tippmann</a></span>
+                    <span class="label_description label_inline">Kod produktu: <a href="#">6578758769878</a></span>
+                </div>
+
+                <div class="col-md-12 product_colors">
+                    <span class="label_description col-md-12">Kolor:</span>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider select_foto col-md-12" title="black"><img src="gun_1.png"></a></div>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider col-md-12" title="red"><img src="gun_2.png"></a></div>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider col-md-12" title="pink"><img src="gun_3.png"></a></div>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider col-md-12" title="green"><img src="gun_1.png"></a></div>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider col-md-12" title="blue"><img src="gun_2.png"></a></div>
+                    <div class="selected_color col-md-2 col-xs-4"><a href="#" class="container_item_slider col-md-12" title="white"><img src="gun_3.png"></a></div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="option_form_product col-md-6 col-xs-12">
+                        <span class="label_description col-md-12">Długość lufy:</span>
+                        <form class="form_length_gun col-md-12">
+                            <select class="label_select col-md-12">
+                                <option class="normal_text" value="120" selected>120 cm</option>
+                                <option class="normal_text" value="100">100 cm</option>
+                                <option class="normal_text" value="80">80 cm</option>
+                            </select>
+                        </form>
+                    </div>
+    
+                    <div class="option_form_product col-md-6 col-xs-12">
+                        <span class="label_description col-md-12">Kaliber:</span>
+                        <form class="col-md-12 form_pad">
+                            <select class="label_select col-md-12">
+                                <option class="normal_text" value="55" selected>55NT</option>
+                                <option class="normal_text" value="60">66 LR HV</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-12">
+                    <div class="info_available col-lg-6 col-md-7 col-xs-12">
+                        <i class="fas fa-check check_green"></i>
+                        <span class="col-md-9">
+                            Dostępny na magazynie (14 szt.)
+                            <b>Wysyłka dzisiaj</b>
+                        </span>
+                    </div>
+    
+                    <div class="des_right_products col-lg-6 col-md-5 col-xs-12">
+                        <a href="#"><b class="red">Sprawdź czasy i koszty wysyłki</b></a>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12">
+                    <div class="product_to_basket col-md-4 col-xs-12">
+                        <del class="old_price price">1499,00 zł</del>
+                        <b class="new_price price">1278,00 zł</b>
+                    </div>
+                    <div class="product_to_basket col-md-3 col-xs-5">
+                        <form class="product_counter">
+                            <button class="product_counter_button product_minus ">-</button>
+                            <input class="amount_products " value="1">
+                            <button class="product_counter_button product_plus ">+</button>
+                        </form>
+                    </div>
+                    <div class="product_to_basket col-md-5 col-xs-7">
+                        <span class="btn_red_stains">Dodaj do koszyka</span>
+                    </div>
+                </div>
+                
+                <div class="col-md-12">
+                    <a href="#" class="cheaper_product col-md-7 col-xs-12">
+                        <span class="col-md-2"><img src="cash.png"></span>
+                        <span class="col-md-10">
+                            <b>Znalazłeś ten produkt taniej?</b>
+                            <b class="red">Wynegocjuj dobrą cene</b>
+                        </span>
+                    </a>
+                    <div class="des_right_products col-md-5 col-xs-12">
+                        <a href="#"><b class="red">Dodaj do porównania</b></a>
+                    </div>
+                </div>
+                
+                <div class="col-md-12 banner_ads">
+                    <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                        <img class="col-md-2" src="truck.png">
+                        <span class="col-lg-10 col-md-9"><b>Darmowa dostawa</b></br>
+                            dla zamówień powyżej 600 zł
+                        </span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                        <img class="col-md-2" src="return.png">
+                        <span class="col-lg-10 col-md-9"><b>Zwrot towaru</b></br>
+                            do 14 dni od daty zakupu
+                        </span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                        <img class="col-md-2" src="procent.png">
+                        <span class="col-lg-10 col-md-9"><b>Zakupy na raty</b></br>
+                            <a class="red" href="#">oblicz rate >></a>
+                        </span>
+                    </div>
+                    <div class="col-lg-6 col-md-12 col-sm-6 col-xs-12">
+                        <img class="col-md-2" src="medal.png">
+                        <span class="col-lg-10 col-md-9"><b>Gwarancja 12 miesięcy</b></span>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="recommended_products">
+                <h2><img src="triangle.png"> Dobierz do kompletu</h2>
+                <div class="item_recom col-md-4 col-xs-12">
+                    <a href="#" class="img_recom col-md-6 col-sm-4"><img src="mask.png"></a>
+                    <a href="#" class="text_recom col-md-6 col-sm-8">Maska Empire E-flex</br> Goggle (Black)
+                            <b>139,00 zł</b>
+                    </a>
+                </div>
+                <div class="item_recom col-md-4 col-xs-12">
+                    <a href="#" class="img_recom col-md-6 col-sm-4"><img src="mask.png"></a>
+                    <a href="#" class="text_recom col-md-6 col-sm-8">Maska Empire E-flex</br> Goggle (Black)
+                            <b>139,00 zł</b>
+                    </a>
+                </div>
+                <div class="item_recom col-md-4 col-xs-12">
+                    <a href="#" class="img_recom col-md-6 col-sm-4"><img src="mask.png"></a>
+                    <a href="#" class="text_recom col-md-6 col-sm-8">Maska Empire E-flex</br> Goggle (Black)
+                            <b>139,00 zł</b>
+                    </a>
+                </div>
+            </div>
+
+            <div>
+                <div class="col-md-9 col-xs-12">
+                    <h2><img src="triangle.png"> Marker firmy Tippmann</h2>
+
+                    <span class="long_desc_product col-md-12">
+                        stworzony z myślą o młodszych graczach, poprzez zmiejszenie kalubru do 50Cal. </br>
+                        FT-50 Lite wygladem przypomina marker FT-12 , jednak rózni się on trochę od swojego pierwowzoru.</br>
+                        Marker jest trochę krótszy, korpus ma bardziej agresywny charakter, średnica zewnętrzna oraz wewnętrzna  
+                        lufy jest mniejsza</br>
+                         oraz średnica otworu podającego kulki w magazynku grawitacyjnym jest dostosowana do kalubru 50Cal.
+                    </span>
+
+                    <span class="long_desc_product col-md-12">
+                        kompaktowy militarny wygląd</br>
+                        szybkie serwisowanie bez użycia narzędzi</br>
+                        aluminiowy chwyt i body</br>
+                        wewnętrzny system gazowy "inline bolt system"</br>
+                        modułowa konstrukcja</br>
+                        stałe przyrządy celownicze</br>
+                        Zestaw zawiera magazynek grawitacyjny oraz barrel bag (osłona lufy)</br>
+                    </span>
+
+                    <h3>Nasi klienci pytali o:</h3>
+                    <div>
+                        <div class="questions_client col-md-10 col-xs-12">
+                            <h4>Czy ten pistolet jest idealny do gry w paintballa?</h4>
+                            <div class="col-md-12">
+                                Zwane popularnie "długimi wiatrówkami" świetnie nadają się do precyzyjnego strzelania na dłuższe dystanse (powyżej 15-20 metrów). Mają większą moc niż wiatrówki pistolety, 
+                                dłuższą lufę i z tego też względu są zdecydowanie bardziej celne.</br> Wystrzeliwany z nich śrut ma również większe możliwości przebijania celu
+                            </div>
+                        </div>
+                        <div class="questions_client col-md-10 col-xs-12">
+                            <h4>Czy ten model posiada mechanizm spustowy?</h4>
+                            <div class="col-md-12">
+                                Zwane popularnie "długimi wiatrówkami" świetnie nadają się do precyzyjnego strzelania na dłuższe dystanse (powyżej 15-20 metrów). Mają większą moc niż wiatrówki pistolety, 
+                                dłuższą lufę i z tego też względu są zdecydowanie bardziej celne. </br> Wystrzeliwany z nich śrut ma również większe możliwości przebijania celu
+                            </div>
+                        </div>
+                        <div class="questions_client col-md-10 col-xs-12">
+                            <h4>Jakie dobrać naboje do tego sprzętu?</h4>
+                            <div class="col-md-12">
+                                Zwane popularnie "długimi wiatrówkami" świetnie nadają się do precyzyjnego strzelania na dłuższe dystanse (powyżej 15-20 metrów). Mają większą moc niż wiatrówki pistolety, 
+                                dłuższą lufę i z tego też względu są zdecydowanie bardziej celne.</br> Wystrzeliwany z nich śrut ma również większe możliwości przebijania celu
+                            </div>
+                        </div>
+                        <div class="questions_client col-md-10 col-xs-12">
+                            <h4>Nie moge znależć instrukcji, czy mi ją doślecie?</h4>
+                            <div class="col-md-12">
+                                Zwane popularnie "długimi wiatrówkami" świetnie nadają się do precyzyjnego strzelania na dłuższe dystanse (powyżej 15-20 metrów). Mają większą moc niż wiatrówki pistolety, 
+                                dłuższą lufę i z tego też względu są zdecydowanie bardziej celne.</br> Wystrzeliwany z nich śrut ma również większe możliwości przebijania celu
+                            </div>
+                        </div>
+                    </div>
+                    <div class="add_question">
+                        <h3>Nie znalazłeś odpowiedzi?</h3>
+                        <span class="btn_red_stains">Zadaj swoje pytanie</span>
+                    </div>
+                </div>
+                <div class="banner_about_product col-md-3 col-xs-12">
+                    <div class="col-md-12 banner_discount">
+                        <span class="banner_about col-md-12">Usługi serwisowe</span>
+                        <span class="banner_about col-md-12">Na sprzęt kupiony w sklepie</span>
+                        <span class="banner_about col-md-12">Stały rabat -25%</span>
+                        <a href="#" class="banner_about btn_white col-md-12">Sprawdź</a>
+                    </div>
+                    <div class="col-md-12 banner_description">
+                        <span>Numer seryjny<b class="col-md-12">111000</b></span>
+                        <span>Model<b class="col-md-12">Tippmann FT-50 lite 50</b></span>
+                        <span>Wykończenie<b class="col-md-12">Czarny-mat</b></span>
+                        <span>Kaliber<b class="col-md-12">66 LR HV</b></span>
+                        <span>Pojemność magazynka:<b class="col-md-12">1000 nabojów</b></span>
+                        <span>Mechnizm spustowy:<b class="col-md-12">SA (Single Action)</b></span>
+                        <span>Siła nacisku:<b class="col-md-12">1.8 kg / 4 lb</b></span>
+                        <span>Wymiary:<b class="col-md-12">1200x123mm</b></span>
+                    </div>
+                </div>
+            </div>
+
+            <div id="blog_container">
+                <h2><img src="triangle.png"> Porady naszego eksperta</h2>
+                <a href="#" class="item_blog col-md-6 col-sm-12">
+                    <h5>Jak stworzyć samemu farby do gery?</h5>
+                    <span class="img_blog col-md-5 col-sm-4 col-xs-12"><img src="foto_2.png"></span>
+                    <span class="text_blog col-md-7 col-sm-8 col-xs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut justo eleifend, tempus lorem et, facilisis nisi. Praesent et eros non nisl 
+                        iaculis ultricies eget nec odio. Fusce nec efficitur elit, non ullamcorper libero. Quisque consequat sapien in lacus condimentum posuere.
+                    </span>
+                </a>
+                <a href="#" class="item_blog col-md-6 col-sm-12">
+                    <h5>Jak dobrać naboje z farbą do mojego sprzętu?</h5>
+                    <span class="img_blog col-md-5 col-sm-4 col-xs-12"><img src="foto_1.png"></span>
+                    <span class="text_blog col-md-7 col-sm-8 col-xs-12">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ut justo eleifend, tempus lorem et, facilisis nisi. Praesent et eros non nisl 
+                        iaculis ultricies eget nec odio. Fusce nec efficitur elit, non ullamcorper libero. Quisque consequat sapien in lacus condimentum posuere.
+                    </span>
+                </a>
+            </div>
+
+        </div>
+    </main>
+    
+    <footer class="main_section">
+        <div class="container">
+            <ul class="nav_footer_level_1">
+                <li class="nav_footer_item_level_1 col-md-3 col-sm-6 col-xs-12">
+                    <span>Informacje</span>
+                    <ul class="nav_footer_level_2">
+                        <li class="nav_footer_item_level_2"><a href="#">Informacje o sklepie</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Wysyłka</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Regulamin</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Polityka prywatności</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Odstąpienie od umowy</a></li>
+                    </ul>
+                </li>
+                <li class="nav_footer_item_level_1 col-md-3 col-sm-6  col-xs-12">
+                        <span>Moje konto</span>
+                    <ul class="nav_footer_level_2">
+                        <li class="nav_footer_item_level_2"><a href="#">Zarejestruj się</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Moje zamówienia</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Koszyk</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Ulubione</a></li>
+                        <li class="nav_footer_item_level_2"><a href="#">Historia transakcji</a></li>
+                    </ul>
+                </li>
+                <li class="nav_footer_item_level_1 col-md-3 col-sm-6  col-xs-12">
+                        <span>Kontakt</span>
+                    <ul class="nav_footer_level_2">
+                        <li class="nav_footer_item_level_2"><a class="number_large" href="tel:+48574046421">+48 574 046 421</a></li>
+                        <li class="nav_footer_item_level_2"><a class="email_large" href="mailto:kontakt@assasins-arms.pl">kontakt@assasins-arms.pl</a></li>
+                        <li class="nav_footer_item_level_2">
+                            <a class="socialmedia_ikon" href="www.facebook.com"><img src="facebook_footer.png"></a>
+                            <a class="socialmedia_ikon" href="www.instagram.com"><img src="instagram_footer.png"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav_footer_item_level_1 col-md-3 col-sm-6  col-xs-12">
+                    <span>Moje zamówienia</span>
+                    <ul class="nav_footer_level_2">
+                        <li class="nav_footer_item_level_2"><img src="mini_truck.png"> <a href="#">Sprawdź status zamówienia</a></li>
+                        <li class="nav_footer_item_level_2"><img src="mini_search.png"> <a href="#">Śledź przesyłkę</a></li>
+                        <li class="nav_footer_item_level_2"><img src="mini_hand.png"> <a href="#">Reklamacje</a></li>
+                        <li class="nav_footer_item_level_2"><img src="mini_return.png"> <a href="#">Zwroty</a></li>
+                        <li class="nav_footer_item_level_2"><img src="mini_info.png"> <a href="#">Informacje o wymianie</a></li>
+                    </ul>
+                </li>
+            </ul> 
+        </div>
+        <div id="copyright" class="container menu_footer"><a href="#"><img src="IdoSellShop_white.png" title="IdoSellShop"></a></div>
+    </footer>
+
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <script language="javascript" type="text/javascript" src="script1.js"></script>
+</body>
+</html>
