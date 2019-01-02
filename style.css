@@ -874,6 +874,7 @@ a.socialmedia_ikon{
 }
 @media only screen and (max-width: 760px){
     h2{font-size: 18px;}
+    h4{padding-right: 20px;}
     .container{width: 100%; }
     /* header.main_section, main.main_section{padding: 5px;} */
     header{ overflow: hidden; overflow-y: visible; padding: 5px;}
