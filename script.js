@@ -1,6 +1,6 @@
 $(document).ready(function(){
     // language popup
-    $('.selected_language').click(function(){
+    $('.selected_language').on('click', function(){
         $('.select_language_popup').toggle();
     });
 
@@ -27,21 +27,21 @@ $(document).ready(function(){
     });
 
     // counter product basket
-    $('.product_minus').click(function(){
+    $('.product_minus').on('click', function(){
         calculate_amount('minus');
         return false;
     });
-    $('.product_plus').click(function(){
+    $('.product_plus').on('click', function(){
         calculate_amount('plus');
         return false;
     });
-    $('.amount_products').change(function(){
+    $('.amount_products').on('change', function(){
         calculate_amount('0');
     });
 
     function calculate_amount(operation){
         var value_products = $('.amount_products').val(),
-        new_val = value_products.match(/^[0-9]+(\.[0-9]{1,2})?$/g);
+            new_val = value_products.match(/^[0-9]+(\.[0-9]{1,2})?$/g);
         if(new_val && new_val > 0){
             if(operation == 'plus'){
                 value_products = parseInt(new_val) + parseInt(1);
@@ -58,26 +58,21 @@ $(document).ready(function(){
         }
     }
 
-
     // slider - view foto + add class .select_foto
-    $('.slider_product .container_item_slider').click(function(){
-        $('.slider_product .container_item_slider').each(function(){
-            $(this).removeClass('select_foto');
-        });
+    $('.slider_product .container_item_slider').on('click', function(){
+        $('.slider_product .container_item_slider').removeClass('select_foto');
         $(this).addClass('select_foto');
         var foto = $(this).find('img').attr('src');
         $(".product_large_foto img").attr("src", foto);
     });
 
-    if ($(window).width() < 760) {
-        nav_link_to_hamburger();
-        toogle_menu_link();
-    } else {
-        nav_link_to_menu();
-        $('.nav_item_level_1 > a').removeClass('toggle_menu_item');
-    }
+    // questions client toggle
+    $('.questions_client').on('click', function(){
+        $(this).find('div').toggle();
+    });
+
     // mobile - move elemnets to toggle mobile menu
-    $(window).resize(function() {
+    function changeWindow(){
         if ($(window).width() < 760) {
             nav_link_to_hamburger();
             toogle_menu_link();
@@ -85,17 +80,16 @@ $(document).ready(function(){
             nav_link_to_menu();
             $('.nav_item_level_1 > a').removeClass('toggle_menu_item');
         }
-    });
-
-    // questions client toggle
-    $('.questions_client').click(function(){
-        $(this).find('div').toggle();
+    }
+    changeWindow();
+    $(window).resize(function() {
+        changeWindow();
     });
 
     function toogle_menu_link(){
         $('.nav_item_level_1').addClass('toggle_menu_item');
         $('.nav_level_2').hide();
-        $('.toggle_menu_item').click(function(){
+        $('.toggle_menu_item').on('click', function(){
             $(this).find('.nav_level_2').toggle();
         });
     }
@@ -110,7 +104,6 @@ $(document).ready(function(){
             $('#top_basket').prepend($('#top_language'));
             $('#top_language').after($('#top_link_your_account'));
             $('#rank_counter > img').attr('src', 'rank.png');
-
             // hide basket svg and show normal basket
             $("#links_basket").show();
             $("#mobile_menu").remove();
@@ -119,20 +112,16 @@ $(document).ready(function(){
 
     // przeniesienie navigacji do hamburgera // mobile
     function nav_link_to_hamburger(){
-        if($('#nav_mobile_menu').length == 0){
+        if(!$('#nav_mobile_menu').length){
             $('#basket_container').removeClass('container');
             $("header").prepend("<div id='mobile_menu' class='col-md-2'><span class='hamburger_svg mobile_left'><i class='fas fa-bars'></i></span><div id='nav_mobile_menu'></div></div>");
-            $('#nav_mobile_menu').prepend($('.hide_mobile#top_language'));
-            $('#nav_mobile_menu').prepend($('.hide_mobile#top_contact_links'));
-            $('#nav_mobile_menu').prepend($('.hide_mobile#top_link_your_account'));
-            $('#nav_mobile_menu').prepend($('.hide_mobile#top_menu'));
-            $('#nav_mobile_menu').prepend($('.hide_mobile#top_search'));
+            $('#nav_mobile_menu').prepend($('.hide_mobile#top_search'), $('.hide_mobile#top_menu'), $('.hide_mobile#top_link_your_account'), $('.hide_mobile#top_contact_links'), $('.hide_mobile#top_language'));
             $('#rank_counter > img').attr('src', 'rank_red.png');
             // show basket svg and hide normal basket
             $("#links_basket").hide();
             // toggle menu mobile
             var flag_mobile_left = 1;
-            $('.hamburger_svg').click(function(){
+            $('.hamburger_svg').on('click', function(){
                 if(flag_mobile_left){
                     $( ".mobile_left" ).animate({
                         left: "+=250"
