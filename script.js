@@ -113,7 +113,7 @@ $(document).ready(function(){
             // hide basket svg and show normal basket
             $("#links_basket").show();
             $("#mobile_menu").remove();
-            console.log("przenieisienie2");
+            $('.option_product').after($('.check_product'), $('.to_basket'));
             $('.products_description').prepend($('h1'));
         }
         $('.mobile_left').css('left', '0px'); 
@@ -153,8 +153,9 @@ $(document).ready(function(){
                     flag_mobile_left = 1;
                 }
             })
-            console.log("przenieisienie1");
             $('#product_container').prepend($('h1'));
+            $('.option_product').after($('.to_basket'), $('.check_product'));
+
         }
         $('.mobile_left').css('left', '0px'); 
     }
