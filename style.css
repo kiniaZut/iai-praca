@@ -826,10 +826,17 @@ footer{
 .nav_footer_item_level_2 > a{
     font-size: 13px;
     margin: 7px 0;
+    color: #a7a4a4;
 }
 
-.nav_footer_item_level_2 img{
+/* .nav_footer_item_level_2 img{
     margin-right: 10px;
+} */
+.icon_white_footer{
+    font-size: 15px;
+    color: #a7a4a4;
+    margin-right: 10px;
+    transition: var(--transition);
 }
 a.number_large{
     font-size: 22px; 
@@ -842,8 +849,18 @@ a.email_large{
     margin: -3px -2px 0;
 }
 a.socialmedia_ikon{
-    padding: 20px 20px 0px 0px;
+    padding: 14px 20px 0px 0px;
 }
+.icon_red_footer{
+    font-size: 24px;
+    color: var(--red);
+    margin-left: -10px;
+    transition: var(--transition);
+}
+.icon_red_footer:hover{
+    color: #a7a4a4;;
+}
+
 /* logo iai */
 #copyright{
     text-align: center;
