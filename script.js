@@ -108,6 +108,7 @@ $(document).ready(function(){
             $("#links_basket").show();
             $("#mobile_menu").remove();
         }
+        $('.mobile_left').css('left', '0px'); 
     }
 
     // przeniesienie navigacji do hamburgera // mobile
@@ -145,5 +146,6 @@ $(document).ready(function(){
                 }
             })
         }
+        $('.mobile_left').css('left', '0px'); 
     }
 });
