@@ -385,7 +385,7 @@ nav{
 .slick-arrow{
     font-size:30px;
     position: absolute;
-    right: 57%;
+    right: 45%;
     /* transform: translateX(-50%); */
     z-index: 2;
     color: #333;
@@ -877,8 +877,10 @@ a.socialmedia_ikon{
     .text_blog {padding: 0px 15px 16px 25px;}
     .banner_discount > span:first-child, .banner_discount > span:nth-child(2),.banner_discount > span:nth-child(3){font-size: 10px;}
     .banner_discount{padding: 10px; background-image: url("./background_redmoro1.png");}
+    .slick-arrow{right: 58%;}
 }
 @media only screen and (max-width: 760px){
+    h1{font-size: 20px;}
     h2{font-size: 18px;}
     h4{padding-right: 20px;}
     .container{width: 100%; }
@@ -940,11 +942,9 @@ a.socialmedia_ikon{
     #top_links_basket::before{top: -47px;}
     a.number_large{font-size: 25px;}
     a.email_large{font-size: 18px;}
-
     .selected_color{padding-left: 15px;}
     .selected_color:nth-child(2){padding-left: 5px;}
     .selected_color:last-child{text-align: right; }
-
     .old_price{font-size: 13px;}
     .new_price{font-size: 30px;}
     .btn_red_stains, .cheaper_product b{font-size: 13px;}
@@ -962,4 +962,5 @@ a.socialmedia_ikon{
     .products_description > .col-md-12 {padding: 11px 0px 3px;}
     .check_green{margin-left: 2px;}
     .info_available .col-md-9{letter-spacing: 0.06em;}
+    .slick-arrow{right: 54%;}
 }
