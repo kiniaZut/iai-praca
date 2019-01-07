@@ -115,8 +115,9 @@ $(document).ready(function(){
             $("#mobile_menu").remove();
             $('.option_product').after($('.check_product'), $('.to_basket'));
             $('.products_description').prepend($('h1'));
+            $('.mobile_left').css('left', '0px'); 
         }
-        $('.mobile_left').css('left', '0px'); 
+        
     }
 
     // przeniesienie navigacji do hamburgera // mobile
@@ -155,8 +156,7 @@ $(document).ready(function(){
             })
             $('#product_container').prepend($('h1'));
             $('.option_product').after($('.to_basket'), $('.check_product'));
-
+            $('.mobile_left').css('left', '0px'); 
         }
-        $('.mobile_left').css('left', '0px'); 
     }
 });
