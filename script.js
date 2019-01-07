@@ -113,6 +113,8 @@ $(document).ready(function(){
             // hide basket svg and show normal basket
             $("#links_basket").show();
             $("#mobile_menu").remove();
+            console.log("przenieisienie2");
+            $('.products_description').prepend($('h1'));
         }
         $('.mobile_left').css('left', '0px'); 
     }
@@ -151,6 +153,8 @@ $(document).ready(function(){
                     flag_mobile_left = 1;
                 }
             })
+            console.log("przenieisienie1");
+            $('#product_container').prepend($('h1'));
         }
         $('.mobile_left').css('left', '0px'); 
     }
