@@ -14,6 +14,12 @@ $(document).ready(function(){
         prevArrow: '<button type="button" class="slick-next"><img src="./up-arrow_slick.png"></button>',
         responsive: [
             {
+                breakpoint: 1200,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
               breakpoint: 760,
               settings: {
                 dots: true,
