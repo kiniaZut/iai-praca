@@ -100,8 +100,9 @@ $(document).ready(function(){
     function toogle_menu_link(){
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
-            $('.toggle_menu_item').on('click', function(){
+            $('.toggle_menu_item').off().on('click', function(ev){
                 $(this).find('.nav_level_2').slideToggle();
+                ev.stopPropagation();
             });
         }
         $('.nav_level_2').hide();
