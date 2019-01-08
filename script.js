@@ -84,6 +84,7 @@ $(document).ready(function(){
             toogle_menu_link();
         } else {
             nav_link_to_menu();
+            $('.toggle_menu_item').off('click');
             $('.nav_item_level_1').removeClass('toggle_menu_item');
         }
     }
