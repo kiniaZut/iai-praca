@@ -307,9 +307,9 @@ nav{
     border-bottom: 2px solid #CF3633;
     transition: 0.2s;
 }
-.nav_item_level_1:hover .nav_level_2{
+/* .nav_item_level_1:hover .nav_level_2{
     display: inline-block;
-}
+} */
 .nav_level_2{
     display: none;
     position: absolute;
@@ -904,14 +904,14 @@ a.socialmedia_ikon{
     footer{background: #171717; background-image: none; padding: 50px 5px 0;}
     #top_logo{text-align: center; padding: 15px 20px;}
     .button_search {border-bottom: 2px solid #ffffff; background: #231f20;}
-    .nav_level_2{ display:none; position: relative; box-shadow: none; top:0; left: 0; }
+    .nav_level_2{ position: relative; box-shadow: none; top:0; left: 0; }
     .nav_item_level_1 > a{background: #231f20; color: #ffffff; width: 100%; }
     .show_mobile{display: inline-block;}
     .nav_item_level_1 > a:not(:last-child){pointer-events: none; cursor: pointer;}
     .nav_item_level_1:hover{border-bottom: 2px solid #ffffff;}
     #top_contact_links{background: #231f20;}
     #top_link_your_account > a {padding: 20px 25px; display: inline-block;}
-    .top_contact_link{    margin: 20px 43px 20px 25px; }
+    .top_contact_link{ margin: 20px 43px 20px 25px; }
     .menu_settings_language{display: inline-block;}
     .selected_language{padding: 10px 25px;}
     .form-group{padding: 10px 16px;}
@@ -919,7 +919,6 @@ a.socialmedia_ikon{
     .select_language_popup{ position: relative; background: #231f20;}
     .item_recom:not(:last-child) > .text_recom{border-right: none;}
     .product_colors .selected_color{text-align: center; width: 48px;}
-    /* .nav_item_level_1:hover .nav_level_2{display: unset;} */
     .option_form_product form{    padding: 10px 0px 10px 0px; }
     .banner_discount > span:first-child, .banner_discount > span:nth-child(2),.banner_discount > span:nth-child(3){font-size: 14px;}
     .text_blog {padding: 15px 0px;}
@@ -942,8 +941,7 @@ a.socialmedia_ikon{
     .product_large_foto{display: none;}
     .products_slick_foto {padding: 0 0 45px;}
     .products_slick_foto .select_foto, .products_slick_foto .container_item_slider{width: 100%; border: none;}
-    .products_slick_foto .slick-slide img, .products_slick_foto .container_item_slider img{width: 100%; height: auto;
-         top: 0; transform: translate(0,0);}
+    .products_slick_foto .slick-slide img, .products_slick_foto .container_item_slider img{width: 100%; height: auto; top: 0; transform: translate(0,0);}
     .products_slick_foto .select_foto, .products_slick_foto .container_item_slider{height: auto;}
     .label_description{padding: 0 8px 0 1px;}
 }
