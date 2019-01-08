@@ -808,14 +808,25 @@ footer{
 
 }
 .nav_footer_item_level_1 > span{
+    font-family: 'Lato', sans-serif;
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 10px;
+    letter-spacing: 0.05em;
+}
+.nav_footer_item_level_1:last-child > span{
+    margin-bottom: 12px;
 }
 .nav_footer_item_level_2 > a{
+    font-family: 'Lato', sans-serif;
     font-size: 13px;
     margin: 7px 0;
     color: #a7a4a4;
+    letter-spacing: 0.085em;
+}
+.nav_footer_item_level_1:last-child .nav_footer_item_level_2 > a{
+    margin: 6px 0;
+    letter-spacing: 0.03em;
 }
 
 /* .nav_footer_item_level_2 img{
@@ -829,13 +840,13 @@ footer{
 }
 a.number_large{
     font-size: 22px; 
-    margin: 3px 0; 
-    letter-spacing: -0.05em;
+    margin: 1px 0px 1px -1px;
+    letter-spacing: 0;
 }
 a.email_large{
     font-size: 14px;
-    letter-spacing: -0.05em;
-    margin: -3px -2px 0;
+    letter-spacing: -0.005em;
+    margin: 0px 0px 3px -2px;
 }
 a.socialmedia_ikon{
     padding: 14px 20px 0px 0px;
