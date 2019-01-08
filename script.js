@@ -100,8 +100,10 @@ $(document).ready(function(){
     function toogle_menu_link(){
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
-            $('.toggle_menu_item').off().on('click', function(ev){
-                $(this).find('.nav_level_2').slideToggle();
+            $('.toggle_menu_item').on('click', function(ev) {
+                $('.toggle_menu_item > ul').not($(this).find('> ul')).slideUp();
+                $(this).find('> ul').slideToggle();
+                // $('html, body').animate({scrollTop:$('.toggle_menu_item').first().offset().top},'fast');
                 ev.stopPropagation();
             });
         }
