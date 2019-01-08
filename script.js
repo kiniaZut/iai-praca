@@ -80,7 +80,6 @@ $(document).ready(function(){
     // mobile - move elemnets to toggle mobile menu
     function changeWindow(){
         if ($(window).width() < 760) {
-            $('.nav_level_2').hide();
             nav_link_to_hamburger();
             toogle_menu_link();
             $('.nav_level_2').removeClass('no_mobile');
@@ -99,13 +98,8 @@ $(document).ready(function(){
     });
 
     function toogle_menu_link(){
-       // $('.nav_level_2').hide();
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
-            // $('.toggle_menu_item > a:not(:last-child)').off().on('click', function(){
-            //     $(this).next('.nav_level_2').slideToggle();
-            //     return false;
-            // });
             $('.nav_item_level_1 > a:not(:last-child)').off().on('click', function(ev) {
                 $('.toggle_menu_item > ul').not($(this).parent().find('> ul')).slideUp();
                 $(this).parent().find('> ul').slideToggle();
