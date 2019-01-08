@@ -307,7 +307,7 @@ nav{
     border-bottom: 2px solid #CF3633;
     transition: 0.2s;
 }
-.nav_item_level_1:hover .nav_level_2{
+.nav_item_level_1:hover .nav_level_2.no_mobile{
     display: inline-block;
 }
 .nav_level_2{
