@@ -857,7 +857,7 @@ a.socialmedia_ikon{
     margin-left: -10px;
     transition: 0.2s;
 }
-.icon_red_footer:hover{
+.socialmedia_ikon:hover .icon_red_footer{
     color: #a7a4a4;;
 }
 
