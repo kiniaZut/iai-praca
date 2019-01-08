@@ -109,6 +109,7 @@ $(document).ready(function(){
                 $('.toggle_menu_item > ul').not($(this).parent().find('> ul')).slideUp();
                 $(this).parent().find('> ul').slideToggle();
                 ev.stopPropagation();
+                return false;
             });
         }
     }
