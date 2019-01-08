@@ -83,7 +83,6 @@ $(document).ready(function(){
             nav_link_to_hamburger();
             toogle_menu_link();
             $('.nav_level_2').removeClass('no_mobile');
-            $('.nav_level_2').css('display', 'none');
         } else {
             nav_link_to_menu();
             $('.toggle_menu_item').off('click');
