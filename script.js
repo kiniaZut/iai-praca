@@ -101,9 +101,14 @@ $(document).ready(function(){
         $('.nav_level_2').hide();
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
-            $('.toggle_menu_item > a:not(:last-child)').off().on('click', function(){
-                $(this).next('.nav_level_2').slideToggle();
-                return false;
+            // $('.toggle_menu_item > a:not(:last-child)').off().on('click', function(){
+            //     $(this).next('.nav_level_2').slideToggle();
+            //     return false;
+            // });
+            $('.nav_item_level_1 > a:not(:last-child)').off().on('click', function(ev) {
+                $('.toggle_menu_item > ul').not($(this).parent().find('> ul')).slideUp();
+                $(this).parent().find('> ul').slideToggle();
+                ev.stopPropagation();
             });
         }
     }
