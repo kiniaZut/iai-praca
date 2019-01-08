@@ -87,20 +87,25 @@ $(document).ready(function(){
             $('.nav_item_level_1 > a').removeClass('toggle_menu_item');
         }
     }
+
     changeWindow();
+
     $(window).resize(function() {
         changeWindow();
     });
 
     function toogle_menu_link(){
-        $('.nav_item_level_1').addClass('toggle_menu_item');
+        if(!$('.toggle_menu_item').length){
+            $('.nav_item_level_1').addClass('toggle_menu_item');
+            $('.toggle_menu_item').on('click', function(){
+                $(this).find('.nav_level_2').toggle();
+            });
+        }
         $('.nav_level_2').hide();
-        $('.toggle_menu_item').on('click', function(){
-            $(this).find('.nav_level_2').toggle();
-        });
+        
     }
 
-    // przeniesienie navigacji do menu
+    // navigacji -> menu
     function nav_link_to_menu(){
         if($('#nav_mobile_menu').length){
             $('#basket_container').addClass('container');
@@ -117,10 +122,9 @@ $(document).ready(function(){
             $('.products_description').prepend($('h1'));
             $('.mobile_left').css('left', '0px'); 
         }
-        
     }
 
-    // przeniesienie navigacji do hamburgera // mobile
+    // nav -> hamburgera // mobile
     function nav_link_to_hamburger(){
         if(!$('#nav_mobile_menu').length){
             $('#basket_container').removeClass('container');
@@ -133,19 +137,22 @@ $(document).ready(function(){
             var flag_mobile_left = 1;
             $('.hamburger_svg').on('click', function(){
                 if(flag_mobile_left){
-                    $( ".mobile_left" ).animate({
+
+                    $(".mobile_left").animate({
                         left: "+=250"
                         }, 200, function() {
                         $('.mobile_left').css('left', '250px'); 
                     });
+
                     $('#nav_mobile_menu').animate({
                         left: "0"
                     }, 100, function(){
                         $('#nav_mobile_menu').toggle();
                     });
+
                     flag_mobile_left = 0;
                 }else{
-                    $( ".mobile_left, #nav_mobile_menu" ).animate({
+                    $(".mobile_left, #nav_mobile_menu").animate({
                         left: "-=250"
                         }, 200, function() {
                         $('.mobile_left').css('left', '0px'); 
