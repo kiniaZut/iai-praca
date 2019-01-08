@@ -98,7 +98,7 @@ $(document).ready(function(){
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
             $('.toggle_menu_item').on('click', function(){
-                $(this).find('.nav_level_2').toggle();
+                $(this).find('.nav_level_2').slideToggle();
             });
         }
         $('.nav_level_2').hide();
