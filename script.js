@@ -102,7 +102,9 @@ $(document).ready(function(){
             $('.nav_item_level_1').addClass('toggle_menu_item');
             $('.nav_level_2').slideUp();
             $('.nav_item_level_1 > a:not(:last-child)').off().on('click', function(ev) {
+                $('.toggle_menu_item > ul').not($(this).parent().find('> ul')).slideUp();
                 $(this).parent().find('> ul').slideToggle();
+                $('html, body').animate({scrollTop:$('.toggle_menu_item').first().offset().top},'fast');
                 ev.stopPropagation();
                 return false;
             });
