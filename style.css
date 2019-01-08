@@ -906,7 +906,7 @@ a.socialmedia_ikon{
     footer{background: #171717; background-image: none; padding: 50px 5px 0;}
     #top_logo{text-align: center; padding: 15px 20px;}
     .button_search {border-bottom: 2px solid #ffffff; background: #231f20;}
-    .nav_level_2{display:none; position: relative; box-shadow: none; top:0; left: 0; }
+    .nav_level_2{ position: relative; box-shadow: none; top:0; left: 0; }
     .nav_item_level_1 > a{background: #231f20; color: #ffffff; width: 100%; }
     .show_mobile{display: inline-block;}
     .nav_item_level_1:hover{border-bottom: 2px solid #ffffff;}
