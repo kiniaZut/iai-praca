@@ -88,7 +88,7 @@ h2{font-size: 24px; text-transform: uppercase; padding-bottom: 15px;}
 h2 img{vertical-align: middle; width: 16px; margin-right: 6px;}
 h3{ font-size: 16px; text-transform: uppercase; padding: 32px 0 3px; display: inline-block;}
 h4, h5{font-size: 13px; font-weight: 700; cursor: pointer; letter-spacing: -0.01em;}
-h5{font-size: 14px; color: #231f20;  padding: 17px 0 18px; letter-spacing: 0.02em; }
+h5{font-family: 'Arial'; font-size: 16px; color: #231f20;  padding: 17px 0 18px; letter-spacing: 0; }
 .btn_red_stains{
     font-size: 11px;
     background: url("./background_redmoro1.png");
@@ -767,10 +767,10 @@ padding-left: 15px;
 /* blog */
 .img_blog, .text_blog{vertical-align: top;}
 .text_blog{
-    font-size: 13px;
+    font-family: 'Arial';
+    font-size: 14px;
     line-height: 24px;
     padding: 0px 15px 16px 26px;
-    letter-spacing: -0.031em;
     color: #231f20;
 }
 /* ------------------------- FOOTER ------------------------- */
@@ -967,7 +967,7 @@ a.socialmedia_ikon{
     .info_available > *{font-size: 10px;}
     .check_green{font-size: 27px;}
     .long_desc_product{padding: 11px 0;}
-    .text_blog{    padding: 21px 0px 16px 26px;}
+    .text_blog{ padding: 20px 0px 16px 27px;}
     .banner_discount{background-position: center; padding: 26px 0px 28px 58px;}
     .banner_discount > span:nth-child(2){font-size: 12px;}
     .banner_discount > span:first-child, .banner_discount > span:nth-child(3){font-size: 16px;}
@@ -977,4 +977,5 @@ a.socialmedia_ikon{
     .check_green{margin-left: 2px;}
     .info_available .col-md-9{letter-spacing: 0.06em;}
     .slick-arrow{right: 54%;}
+    #recommended_products {padding: 80px 0 46px;}
 }
