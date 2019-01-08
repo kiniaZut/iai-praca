@@ -82,10 +82,12 @@ $(document).ready(function(){
         if ($(window).width() < 760) {
             nav_link_to_hamburger();
             toogle_menu_link();
+            $('.nav_level_2').removeClass('no_mobile');
         } else {
             nav_link_to_menu();
             $('.toggle_menu_item').off('click');
             $('.nav_item_level_1').removeClass('toggle_menu_item');
+            $('.nav_level_2').addClass('no_mobile');
         }
     }
 
