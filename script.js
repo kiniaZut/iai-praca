@@ -100,8 +100,9 @@ $(document).ready(function(){
     function toogle_menu_link(){
         if(!$('.toggle_menu_item').length){
             $('.nav_item_level_1').addClass('toggle_menu_item');
+            $('.nav_level_2').slideUp();
             $('.nav_item_level_1 > a:not(:last-child)').off().on('click', function(ev) {
-                $(this).parent().find('> ul').slideUp().slideToggle();
+                $(this).parent().find('> ul').slideToggle();
                 ev.stopPropagation();
                 return false;
             });
