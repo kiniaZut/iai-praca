@@ -80,10 +80,10 @@ $(document).ready(function(){
     // mobile - move elemnets to toggle mobile menu
     function changeWindow(){
         if ($(window).width() < 760) {
-            $('.toggle_menu_item > ul').slideUp();
             nav_link_to_hamburger();
             toogle_menu_link();
             $('.nav_level_2').removeClass('no_mobile');
+            $('.nav_level_2').css('display', 'none');
         } else {
             nav_link_to_menu();
             $('.toggle_menu_item').off('click');
